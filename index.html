@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Recipe page</title>
+  <style>
+    body {
+    background-color:rgb(248, 243, 243); /* Light pink color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-container {
+    background-color: white; /* White background for the content */
+    width: 100%; /* Adjust the width as necessary */
+    padding: 30px; /* Padding inside the white content box */
+    border-radius: 25px; /* Rounded corners for the content box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a lifted effect */
+    margin:10% 20%;
+}
+
+.image
+{
+    border-radius: 25px;
+    width:75%;
+    height: 25%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2
+{
+    font-size:20px;
+    color: rgb(189, 45, 45);
+    font-style: oblique;
+}
+h2.center-title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-container h1 
+{
+    color:black;
+    font-size: 50px;
+   
+}
+.inside-container p
+{
+    font-size:17px;
+    
+}
+.section
+{
+    background-color: rgb(247, 218, 218);
+    padding: 30px; 
+    border-radius: 40px;
+    margin:50px 100px;
+}
+.section-block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-block ul li
+{
+    padding: 10px;
+    font-family:cursive;
+    font-size: 17px;
+}
+.ingerdients-section ul li
+{
+    padding:10px;
+}
+ol li::marker
+{
+    color:rgb(189, 45, 45);
+    font-weight: bolder;
+}
+.instructions ol li
+{
+    padding: 10px;
+}
+.nutrition table {
+    border-collapse: collapse; /* Ensures that borders behave as a single border */
+    width: 100%;
+}
+
+.nutrition table td {
+    padding: 10px;
+    border-bottom: 1px solid gray; 
+}
+.nutrition table td:last-child {
+    width: 80%;  
+    color:rgb(189,45,45);
+    font-weight: bolder;
+}
+.attribution { 
+    padding-top: 100px;
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+     @media only screen and (max-width: 768px) {
+        .main-container {
+            width: 90%; /* On small screens, the container will take 90% of the screen */
+            padding: 20px; /* Reduce padding for smaller screens */
+        }
+    
+        .inside-container h1 {
+            font-size: 30px; /* Smaller font size for mobile */
+        }
+        
+        .section-block ul li {
+            font-size: 15px; /* Adjust text size for better readability */
+        }
+    
+        .image {
+            width: 100%; /* Ensure the image scales with the container */
+        }
+    }
+    
+  
+  </style>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<div class="main-container">
+  <img src="image-omelette.jpeg" class="image">
+  <div class="inside-container">
+  <h1>Simple Omelette Recipe  </h1>
+  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked <br>
+    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+   </div>
+  <div class="section">
+    <h2 class="center-title">Preparation time</h2>
+    <div class="section-block">
+      <ul>
+      <li><strong>Total:</strong>  Approximately 10 minutes</li> 
+        <li><strong>Preparation:</strong> 5 minutes</li>
+        <li><strong>Cooking: </strong>5 minutes</li>
+      </ul>
+      </div>
+    </div>
+  
+<div class="ingerdients-section">
+  <h2 class="title">Ingredients</h2> 
+  <ul>
+   <li>2-3 large eggs</li> 
+    <li>Salt, to taste</li>
+   <li>Pepper, to taste</li> 
+    <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs
+    </li>
+  </ul>
+
+</div>
+   
+  
+    
+
+  <div class="instructions">
+    <h2 class="title">Instructions</h2>
+  <ol>
+    <li><strong>Beat the eggs: </strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+  <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+
+  <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+    the eggs evenly coat the surface.
+  </li>
+ <li><strong>Add fillings (optional):</strong>  When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+ <li> <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+  <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+  </ol>
+  </div>
+  
+<div class="nutrition">
+  <h2 class="title">Nutrition</h2>
+
+  <p>The table below shows nutritional values per serving without the additional fillings.</p>
+  <table>
+    <tr>
+      <td><strong>Calories:</strong></td>
+      <td>277kcal</td>
+    </tr>
+    <tr>
+      <td><strong>Carbs:</strong></td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td><strong>Protein:</strong></td>
+      <td>20g</td>
+    </tr>
+    <tr>
+      <td><strong>Fat:</strong></td>
+      <td>22g</td>
+    </tr>
+  </table>
+  
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">https://github.com/rekikalemayehu</a>.
+  </div>
+</div>
+  
+</body>
+</html>
